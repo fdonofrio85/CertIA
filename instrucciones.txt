@@ -1,0 +1,71 @@
+═══════════════════════════════════════════════════════════
+  REVISOR UNIT ROTARY — INSTRUCCIONES DE INSTALACIÓN
+═══════════════════════════════════════════════════════════
+
+ARCHIVOS NECESARIOS (deben estar en la misma carpeta):
+  ✓ app.py
+  ✓ requirements.txt
+  ✓ training_data.json
+
+──────────────────────────────────────────────────────────
+PASO 1 — Verificar Python
+──────────────────────────────────────────────────────────
+Abrí una terminal (cmd o PowerShell en Windows) y ejecutá:
+
+    python --version
+
+Necesitás Python 3.8 o superior. Si no tenés Python:
+→ Descargalo de https://www.python.org/downloads/
+→ Durante la instalación, tildar "Add Python to PATH"
+
+──────────────────────────────────────────────────────────
+PASO 2 — Instalar dependencias (solo la primera vez)
+──────────────────────────────────────────────────────────
+En la terminal, navegá a la carpeta donde están los archivos:
+
+    cd C:\ruta\a\la\carpeta
+
+Luego ejecutá:
+
+    pip install -r requirements.txt
+
+Esto instala Streamlit, pandas, sklearn y las demás librerías.
+Necesitás internet solo en este paso.
+
+──────────────────────────────────────────────────────────
+PASO 3 — Correr la aplicación
+──────────────────────────────────────────────────────────
+En la misma terminal:
+
+    streamlit run app.py
+
+Se va a abrir automáticamente en el navegador en:
+    http://localhost:8501
+
+Si no se abre, copiá esa dirección en el navegador.
+
+──────────────────────────────────────────────────────────
+USO DIARIO (sin internet)
+──────────────────────────────────────────────────────────
+Una vez instalado, cada vez que quieras usar la app:
+
+  1. Abrí una terminal
+  2. Navegá a la carpeta: cd C:\ruta\a\la\carpeta
+  3. Ejecutá: streamlit run app.py
+  4. Subí el Excel de OpenWells
+  5. Revisá y corregí las clasificaciones
+  6. Exportá el Excel corregido
+
+──────────────────────────────────────────────────────────
+PROBLEMAS COMUNES
+──────────────────────────────────────────────────────────
+"streamlit no se reconoce como comando"
+  → Cerrar y volver a abrir la terminal después de instalar
+
+"No se encontró training_data.json"
+  → Verificar que ese archivo está en la misma carpeta que app.py
+
+"ModuleNotFoundError"
+  → Ejecutar de nuevo: pip install -r requirements.txt
+
+═══════════════════════════════════════════════════════════
